@@ -66,7 +66,7 @@ public class Main {
 //        int number=5;
 //        String str = (String) nubmer; ERROR!!!;
 
-
+//
         double latitude = 34.098907;
         double longitude = -118.327759;
         char specSymbol = '\u00B0';
