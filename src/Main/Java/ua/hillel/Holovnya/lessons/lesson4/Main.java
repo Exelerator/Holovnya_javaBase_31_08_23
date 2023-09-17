@@ -135,6 +135,8 @@ public class Main {
         int allFocreMin=(int)((forceMin)*860*1.5);
         System.out.println(("Min="+allFocreMin));
 
+        System.out.println("Min Winner");
+
 
     }
 
