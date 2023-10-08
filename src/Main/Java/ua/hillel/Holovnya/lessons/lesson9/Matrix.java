@@ -6,20 +6,21 @@ public class Matrix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = 0;
-        System.out.println("Please enter number");
-        while (true) {
+        for (int i = 0; i < 2; i++) {
+            System.out.println("Please enter number from 1 to 10");
             if (scanner.hasNextInt()) {
-                number = scanner.nextInt();
-                if (number < 0) {
-                    System.out.println("Please enter number again");
+                int userValue = scanner.nextInt();
+                if (userValue >= 0 && userValue <= 10) {
+                    if (userValue == number) {
+                        break;
+                    }
                 } else {
-                    break;
+                    System.out.println("from 1 TO 10");
                 }
-                scanner.nextLine();
             } else {
-                System.out.println("Wrong data");
-                scanner.nextLine();
+                System.out.println("Try again!");
             }
+            scanner.nextLine();
         }
 
 
