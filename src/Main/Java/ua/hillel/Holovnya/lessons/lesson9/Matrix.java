@@ -42,9 +42,9 @@ public class Matrix {
         }
         for (int i = 0; i < array2.length; i++) {
             for (int j =0; j < array2[i].length; j++) {
-                int number = array2[i][j];
+                int number = array1[j][i];
                 array2[i][j] = array1[j][i];
-                array2[j][i] = number;
+                array2[i][j] = number;
             }
         }
         System.out.println("Matrix M x N:");
