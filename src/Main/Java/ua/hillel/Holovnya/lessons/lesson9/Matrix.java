@@ -6,24 +6,41 @@ public class Matrix {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int temp=0;
-        System.out.println("Please enter numbers ");
-        while (true) {
+        int M;
+        int N;
+
+        System.out.println("Please enter two numbers from 1 to 10.");
+
+        while(true) {
             if (scanner.hasNextInt()) {
-                if (temp < 0) {
-                    System.out.println("Please enter number");
-                } else {
+                M = scanner.nextInt();
+                if (M >= 1 && M <= 10) {
                     break;
+                } else {
+                    System.out.println("Please enter two numbers from 1 to 10");
                 }
-                scanner.nextLine();
             } else {
-                System.out.println("Wrong data");
+                System.out.println("Wrong data! Try again!");
                 scanner.nextLine();
             }
+            scanner.nextLine();
         }
+        while(true) {
+            if (scanner.hasNextInt()) {
+                N = scanner.nextInt();
+                if (N >= 1 && N <= 10) {
+                    break;
+                } else {
+                    System.out.println("Please enter two numbers from 1 to 10");
+                }
+            } else {
+                System.out.println("Wrong data! Try again!");
+                scanner.nextLine();
+            }
+            scanner.nextLine();
+        }
+        System.out.println();
 
-        int N = scanner.nextInt();
-        int M = scanner.nextInt();
 
         int[][] array1 = new int[N][M];
         int[][] array2 = new int[M][N];
