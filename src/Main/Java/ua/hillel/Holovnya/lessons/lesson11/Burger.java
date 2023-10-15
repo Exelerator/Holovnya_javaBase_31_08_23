@@ -42,15 +42,17 @@ public class Burger {
                 ", " + cheese +
                 ", " + mayonnaise;
     }
-    public String infoDietBurger(){
-        return  "Diet burger composition: " +
+
+    public String infoDietBurger() {
+        return "Diet burger composition: " +
                 roll +
                 ", " + meat +
                 ", " + green +
                 ", " + cheese;
     }
-    public String infoDoubleBurger(){
-        return  "Double meat burger composition: " +
+
+    public String infoDoubleBurger() {
+        return "Double meat burger composition: " +
                 roll +
                 ", " + meat +
                 ", " + doubleMeat +
