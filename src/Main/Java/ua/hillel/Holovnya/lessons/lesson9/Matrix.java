@@ -10,7 +10,6 @@ public class Matrix {
         int N;
 
         System.out.println("Please enter two numbers from 1 to 10.");
-
         while(true) {
             if (scanner.hasNextInt()) {
                 M = scanner.nextInt();
