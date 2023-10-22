@@ -11,7 +11,6 @@ public class Main {
         for (MusicStyles style : bands ) {
             style.playMusic();
 
-
         }
     }
 }
